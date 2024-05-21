@@ -13,6 +13,8 @@ if(isset($_POST['login'])) {
         session_start();
         $row = $result->fetch_assoc();
         $_SESSION['email'] = $row['email'];
+
+        sleep(3);
         header("Location: home.php");
         exit();
     }

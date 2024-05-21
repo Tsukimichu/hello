@@ -13,9 +13,19 @@
         body{
             background-image: url("images/msc.jpg");
         }
+        .registerForm{
+            
+    width: 420px;
+    height: 35rem;
+    background-color: rgba(5, 2, 0, 0.611);
+    color:#FFF;
+    border-radius: 10px;
+    padding:20px 30px;
+}
+        
     </style>
 <body>
-    <div class="logo">
+    <div class="logo" id="logo">
         <img src="images/logo.png.png" alt="logos">            
     </div>
 
@@ -40,15 +50,23 @@
             <button class="btn" name="login">Login</button>
  
             <div class="register">
-                <p>Don't have an account? <a href="#" id="registerLink">Register</a></p>
+                <p>Don't have an account? <a href="#" id="registerLink" onclick="hideImage()">Register</a></p>
             </div>
         </form>
 
-        <form id="registerForm" action="register.php" method="post" style="display: none;">
+        <form class ="registerForm" id="registerForm" action="register.php" method="post" style="display: none;">
             <h1>Registration</h1>
             <div class="input-box">
                 <input type="text" placeholder="Enter your name" name="name" required> 
                 <i class='bx bxs-user'></i> 
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Id number" name="idNumber" required> 
+                <i class='bx bxs-id-card'></i> 
+            </div>
+            <div class="input-box">
+                <input type="text" placeholder="Enter your Course" name="course" required> 
+                <i class='bx bx-news'></i>
             </div>
             <div class="input-box">
                 <input type="password" placeholder="Enter your Password" name="password" required>
@@ -61,16 +79,22 @@
             <button class="btn" name="register">Register</button>
         </form>
 
-        <form id="forgotPasswordForm" action="" method="" style="display: none;">
-            <h1>Forgot Password</h1>
-            <div class="input-box">
-                <input type="email" placeholder="Enter your Email" name="email" required>
-                <i class='bx bxs-envelope'></i> <br> 
-            </div>
-            <button type="submit" target="loginForm" name="submit">Reset Password</button>
-            <p id="message"></p>
-        </form>
+        <form id="forgotPasswordForm" action="forgotpass.php" method="post" style="display: none;">
+    <h1>Forgot Password</h1>
+    <div class="input-box">
+        <input type="email" placeholder="Enter your Email" name="email" required>
+        <i class='bx bxs-envelope'></i> <br> 
     </div>
+    <button type="submit" class="btn" name="submit">Reset Password</button>
+    <p id="message"></p>
+</form>
+
+    </div>
+    <script>
+        function hideImage() {
+    document.getElementById("logo").style.display = "none";
+}
+    </script>
     <script src="index.js"></script>
 </body>
 </html>

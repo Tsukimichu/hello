@@ -63,6 +63,7 @@ box-shadow: 9.5px 8.5px 21.5px -4px rgba(0, 0, 0, 0.73);
     opacity:1;
 }
 .dashboard .profile img{
+    align-items:center ;
     border: 1px;
     border-radius: 50%;
     size: 5px;  
@@ -78,6 +79,7 @@ box-shadow: 9.5px 8.5px 21.5px -4px rgba(0, 0, 0, 0.73);
     text-align: center;
     font-size: 2px;
 }
+
 .upper{
     display: flex;
     flex-direction: column;

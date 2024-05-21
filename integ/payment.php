@@ -5,12 +5,12 @@
     <link rel="icon" type="x-icon" href="images/icon.png">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Payment - MSC Online Payment System</title>
-    <link rel="stylesheet" href="css/pay.css">
+    <link rel="stylesheet" href="./css/pay.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <div class="wrapper">
-        <form class ="hello" action="">
+        <form class ="hello" action="okay.php">
           <div class="dashboard">
             <div class="profile">
               <img src="images/user.png">
@@ -25,8 +25,9 @@
                 <li><a href="logout.php"><i class='bx bx-log-in'></i>&nbsp;<b>Logout</b></a></li>
             </ul>
            </div>
+           <div class="upper">
            <div class="pay">
-            <div class="bal"><b>Outstanding Balance: 120</b></div><br>
+           <div class="one"> <h4>Outstanding Balance: 120 </h4></div>
             <div class="method">
               <h2>Payment-Method</h2>
                 <div class="money">
@@ -42,8 +43,7 @@
                   <button>Confirm</button>
                 </div>
             </div>
-            
-           </div>
+            </div>
            <div id="paymentProcessingPopbox" class="popbox">
             <h2>Payment Processing</h2>
         
@@ -53,9 +53,9 @@
             <h2>Thank You!</h2>
             <button class="button">Ok</button>
         </div>
-    
-    
-        <script src="payment.js"></script>
+        <script src="./pay.js"></script>
         
         </form>
     </div>
+</body>
+</html>   

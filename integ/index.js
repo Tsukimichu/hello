@@ -12,7 +12,6 @@ registerLink.addEventListener("click", function(event) {
     forpassForm.style.display = "none"; 
 });
 
-
 forpassLink.addEventListener("click", function(event) {
     event.preventDefault();
     loginForm.style.display = "none"; 
